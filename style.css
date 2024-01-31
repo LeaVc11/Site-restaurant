@@ -172,7 +172,7 @@
 
     .hero-link {
         min-width: 110px;
-        margin: 2px;
+        margin: 5px 0 20px;
         padding: 8px 6px;
         font-size: 16px;
     }
@@ -181,8 +181,12 @@
         display: none;
     }
 
+    .heading-h3 span {
+        font-size: 8px
+    }
+
     .push-down-hero {
-        margin-left: 10px;
+        margin: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -192,8 +196,8 @@
         background-color: #e8d28d;
         border: 1px solid #e8d28d;
         position: absolute;
-        bottom: 20px;
         left: 46%;
+
     }
 
     .push-down-hero:hover {
@@ -209,6 +213,10 @@
 @media (max-width: 900px) {
     .main-title {
         font-size: 65px;
+    }
+
+    .push-down-hero {
+
     }
 }
 
@@ -251,7 +259,7 @@
 }
 
 .heading-h3 {
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -286,12 +294,12 @@
         margin-bottom: 52px;
     }
 
-    .heading-h3 {
+    .heading-h3 span {
         font-size: 10px;
     }
 
     .heading-h3 img {
-        width: 30px;
+        width: 25px;
     }
 
     .container {
@@ -315,7 +323,7 @@
     }
 
     .heading-h3 {
-        font-size: 10px;
+        font-size: 25px;
     }
 
 }
@@ -341,39 +349,46 @@
     padding: 50px 20px 125px;
     background-color: #f1f1f1;
 }
+
 .about-content {
     display: flex;
 }
+
 .about-text {
-    width: 60%;
-    margin-right: 96px;
+    width: 90%;
 }
+
 .about-text .heading-h3 {
     margin-bottom: 12px;
 }
+
 .about-text p {
     line-height: 1.4;
 }
+
 .about-text p:nth-child(2) {
     margin-bottom: 44px;
 }
+
 .about-slideshow {
-    width: 40%;
+    width: 100%;
 }
+
 .slideshow-images-container {
-    margin: 12px 0;
+    margin: 12px 10px 30px;
     display: grid;
 }
+
 .about-slideshow img {
     grid-area: 1/1/2/2;
     width: 100%;
     border-radius: 3px;
     opacity: 0;
     visibility: hidden;
-    transition:
-            opacity 0.3s ease-out,
-            visibility 0.3s ease-out;
+    transition: opacity 0.3s ease-out,
+    visibility 0.3s ease-out;
 }
+
 .about-slideshow img.active {
     opacity: 1;
     visibility: visible;
