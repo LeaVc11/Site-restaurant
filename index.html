@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+        Restaurant
+    </title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@300;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+</head>
+<body>
+<header id="accueil">
+    <!-- NAVIGATION-->
+    <nav class="main-nav">
+        <button
+                aria-controls="main-navlist"
+                aria-expanded="false"
+                class="nav-toggler"
+        >
+            <img src="ressources/icone/hamburger.svg" alt="Ouvrir et fermer le menu"/>
+        </button>
+        <ul id="main-navlist">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#menus">Nos Menus</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!--    HERO-->
+    <div class="hero">
+        <h1 class="main-title">Votre restaurant</h1>
+
+        <a href="#menus" class="hero-link hero-link-1">
+            <span>Nos Menus</span>
+            <img src="ressources/icone/cloche.png" alt="menu"/>
+        </a>
+        <a href="#contact" class="hero-link hero-link-2">
+            <span>Contact</span>
+            <img src="ressources/icone/telephone-svgrepo-com.svg" alt=""/>
+        </a>
+        <a href="#valeurs" class="push-down-hero">
+            <img
+                    src="ressources/icone/chevron-down.svg"
+                    alt="Aller à la section nos menus"
+            />
+        </a>
+    </div>
+</header>
+
+<main>
+    <section class="about" id="valeurs">
+        <h2 class="section-title">
+            <span>Des aliments frais et de qualité supérieure.</span>
+            <img src="ressources/icone/nigiri.png" alt="">
+        </h2>
+        <p class="section-subtitle">
+            Asseyez-vous, détendez-vous, nous nous occupons de tout.
+        </p>
+        <div class="container about-content">
+            <div class="about-text">
+                <h3 class="heading-h3">
+                    <img src="ressources/icone/serveur.png"  alt="">
+                    <span>Voici un aperçu de nos meilleurs produits. </span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae distinctio dolorem eligendi enim esse, fugit id in laudantium magnam maxime molestiae nam nesciunt nostrum nulla numquam quisquam rerum ullam.25</p>
+                <h3 class="heading-h3">
+                    <img src="ressources/icone/baguettes.png" alt="">
+                    <span>Votre meilleur fournisseur de Sushis </span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae distinctio dolorem eligendi enim esse, fugit id in laudantium magnam maxime molestiae nam nesciunt nostrum nulla numquam quisquam rerum ullam.25</p>
+
+            </div>
+        </div>
+        <div class="about-slideshow" role="region" aria-roledescription="carousel" aria-label="restaurant Japonais">
+            <div class="slideshow-images-container" role="group">
+                <img src="ressources/img/roasted-salmon.jpg" aria-roledescription="slide" alt="salmon">
+                <img src="ressources/img/sushi-dish.jpg" aria-roledescription="slide" alt="sushi">
+                <img src="ressources/img/sashimi.jpg" aria-roledescription="slide" alt="sashimi">
+            </div>
+                <div class="dots fade-slide-dots" role="group" aria-label="Boutons de controle">
+                    <button class="dot active" data-fadeIndex="1" aria-label="montrer img 1" aria-disabled="true"> </button>
+                    <button class="dot " data-fadeIndex="2" aria-label="montrer img 2" aria-disabled="false"> </button>
+                    <button class="dot " data-fadeIndex="3" aria-label="montrer img 3" aria-disabled="false"> </button>
+                </div>
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
