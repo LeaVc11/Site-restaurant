@@ -96,7 +96,7 @@
     padding-top: 300px;
     background-image: url("ressources/fabrizio-magoni-boaDpmC-_Xo-unsplash.jpg");
     background-size: cover;
-    background-position: 70% 70%;
+    background-position: 50% 20%;
     text-align: center;
 }
 
@@ -380,7 +380,7 @@
 
 .about {
     padding: 50px 20px 125px;
-    background-color: #f1f1f1;
+    background-color: white;
 }
 
 .about-content {
@@ -404,8 +404,8 @@
 }
 
 .about-slideshow {
-    margin: 5px 0 0 20px;
-    width: 80%;
+    margin: 0 0 0 20px;
+    width: 50%;
 }
 
 .slideshow-images-container {
@@ -442,7 +442,7 @@
     border-radius: 50%;
     cursor: pointer;
     border: 1px solid black;
-    background-color: #f1f1f1;
+    background-color:white;
 }
 
 .dot.active {
