@@ -380,7 +380,7 @@
 /*About*/
 
 .about {
-    padding: 50px 20px 125px;
+    padding: 50px 20px 25px;
     background-color: white;
 }
 
@@ -443,7 +443,7 @@
     border-radius: 50%;
     cursor: pointer;
     border: 1px solid black;
-    background-color:white;
+    background-color: white;
 }
 
 .dot.active {
@@ -453,7 +453,7 @@
 /*-------------------------------------------------*/
 @media (max-width: 1024px) {
     .about {
-        padding: 50px 20px 100px;
+        padding: 25px 20px 15px;
     }
 
     .about-content {
@@ -509,7 +509,102 @@
         width: 100%;
     }
 }
+
 /*-------------------------------------------------*/
 /*Presentation Menu*/
 
+.menu {
+    margin: 10px;
+    padding: 10px 10px 50px;
+    background-color: white;
+}
 
+.menu.section-subtitle {
+    margin-bottom: 28px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    flex-shrink: 0;
+    width: 260px;
+    color: #f1f1f1;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.profile-chef {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content button {
+    border-radius: 10px;
+    border: none;
+    background: orange;
+    color: #f1f1f1;
+    padding: 10px 35px;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 5px auto;
+    cursor: pointer;
+    display: block;
+}
+
+.top-card-content {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.top.card-content img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.card-name {
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-description {
+    line-height: 1.4;
+}
+@media (max-width:1024px) {
+    .menu{
+
+        padding: 50px 20px 200px 80px;
+    }
+}
+@media (max-width: 720px) {
+    .menu-card {
+        width: 70%;
+        max-width: 550px;
+        margin: 20px 20px 25px 80px;
+    }
+}
+@media (max-width: 630px) {
+    .menu-card {
+        width: 70%;
+        max-width: 550px;
+        margin: 0 70px 25px 50px;
+    }
+}
+@media (max-width: 550px) {
+    .menu-card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 20px 25px 80px;
+    }
+}
