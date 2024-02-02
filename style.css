@@ -260,6 +260,7 @@
 
 .section-subtitle {
     font-size: 20px;
+    margin-top: 10px;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -508,3 +509,7 @@
         width: 100%;
     }
 }
+/*-------------------------------------------------*/
+/*Presentation Menu*/
+
+
