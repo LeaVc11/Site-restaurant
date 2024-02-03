@@ -313,7 +313,7 @@
     }
 
     .container {
-        max-width: 700px;
+        max-width: 900px;
     }
 }
 
@@ -581,12 +581,21 @@
 .card-description {
     line-height: 1.4;
 }
-@media (max-width:1024px) {
-    .menu{
 
-        padding: 50px 20px 200px 80px;
+@media (max-width: 1024px) {
+    .menu {
+        padding: 50px 10px 200px 30px;
     }
 }
+
+@media (max-width: 960px) {
+    .menu-card {
+        width: 20%;
+        max-width: 400px;
+        margin: 20px 20px 25px 80px;
+    }
+}
+
 @media (max-width: 720px) {
     .menu-card {
         width: 70%;
@@ -594,6 +603,7 @@
         margin: 20px 20px 25px 80px;
     }
 }
+
 @media (max-width: 630px) {
     .menu-card {
         width: 70%;
@@ -601,10 +611,66 @@
         margin: 0 70px 25px 50px;
     }
 }
+
 @media (max-width: 550px) {
     .menu-card {
         width: 100%;
         max-width: 400px;
         margin: 0 20px 25px 80px;
     }
+
+    .menu {
+        max-width: 350px;
+        padding: 50px 20px 200px 0;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 460px) {
+    .menu-card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 20px 25px 80px;
+    }
+
+    .menu {
+        max-width: 300px;
+        padding: 50px 20px 200px 0;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 410px) {
+    .menu-card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 20px 25px 80px;
+    }
+
+    .menu {
+        max-width: 250px;
+        padding: 50px 20px 200px 0;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .menu {
+        max-width: 200px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .menu {
+        max-width: 250px;
+        padding: 50px 50px 200px 0;
+
+    }
+
 }
