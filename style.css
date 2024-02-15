@@ -681,7 +681,7 @@
 
 /*<!--       Contact-->*/
 .contact {
-    padding: 20px 20px 20px;
+    padding: 50px 20px 150px;
     background: linear-gradient(to bottom, #e8d28d, #eae1c5);
 }
 
@@ -696,7 +696,7 @@
     padding: 20px;
     border-radius: 5px;
     color: orange;
-    width: 350px;
+    width: auto;
 }
 
 .contact-block :nth-child(1) {
@@ -715,9 +715,46 @@
 .schedule-tableau p {
     display: flex;
     justify-content: space-between;
-    margin: 12px;
+    align-items: center;
+    margin: 5px;
     padding-bottom: 6px;
 }
 .schedule-tableau p:not(:last-of-type) {
     border-bottom: 1px solid black;
+}
+.schedule-tableau p span:nth-child(1){
+    font-weight: 900;
+}
+@media (max-width: 750px ) {
+    .contact-content{
+        flex-direction: column;
+    }
+    .contact-block{
+        width: auto;
+    }
+    .schedule{
+        margin-left: 10px;
+    }
+    .schedule-tableau,.contact-block{
+        max-width:350px;
+        margin: 0 auto;
+    }
+
+    .adresses{
+        margin-bottom: 36px;
+    }
+    .schedule-tableau p{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 700px ) {
+
+    .schedule{
+        margin-left: 5px;
+    }
+}
+@media (max-width: 360px ){
+    .schedule-tableau h3{
+        font-size: 20px;
+    }
 }
