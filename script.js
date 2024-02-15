@@ -41,10 +41,10 @@ function fadeSlideshow(e) {
         clearInterval(fadeIntervalID)
         fadeIntervalID = window.setInterval(fadeSlideshow, 3500)
     } else {
-currentFadeIndex++;
-if (currentFadeIndex > slideshowImages.length){
-    currentFadeIndex = 1;
-}
+        currentFadeIndex++;
+        if (currentFadeIndex > slideshowImages.length) {
+            currentFadeIndex = 1;
+        }
     }
     slideshowImages[currentFadeIndex - 1].classList.add("active");
     fadeSlideDots[currentFadeIndex - 1].classList.add("active");
@@ -52,3 +52,25 @@ if (currentFadeIndex > slideshowImages.length){
 }
 
 fadeIntervalID = window.setInterval(fadeSlideshow, 3500)
+
+//smooth scroll links
+
+const smoothScrollLinks = [
+    ...navLinks,
+    ...document.querySelectorAll(".hero a")
+]
+
+smoothScrollLinks.forEach(link => link.addEventListener("click", handleSmoothScroll));
+
+function handleSmoothScroll(e) {
+    e.preventDefault();
+
+    const linkHref = e.target.getAttribute("href").substring(1);
+
+    window.scrollTo({
+        top: document.getElementById(linkHref).offsetTop * 0.95,
+        behavior: "smooth"
+    })
+/*    console.log(document.getElementById(linkHref).offsetTop)*/
+    window.history.pushState("", "", `${document.location.pathname}#${linkHref}`)
+}
