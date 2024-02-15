@@ -515,7 +515,7 @@
 
 .menu {
     margin: 10px;
-    padding: 10px 10px 50px;
+    padding: 10px 10px 20px;
     background-color: white;
 }
 
@@ -585,7 +585,7 @@
 
 @media (max-width: 1024px) {
     .menu {
-        padding: 50px 10px 200px 30px;
+        padding: 50px 10px 20px 30px;
     }
 }
 
@@ -604,7 +604,7 @@
         .menu-card {
             width: 70%;
             max-width: 550px;
-            margin: 20px 20px 25px 80px;
+            margin: 20px 20px 25px 15px;
         }
     }
 
@@ -681,7 +681,7 @@
 
 /*<!--       Contact-->*/
 .contact {
-    padding: 50px 20px 150px;
+    padding: 50px 20px 50px;
     background: linear-gradient(to bottom, #e8d28d, #eae1c5);
 }
 
@@ -757,4 +757,11 @@
     .schedule-tableau h3{
         font-size: 20px;
     }
+}
+/*FOOTER*/
+footer{
+    padding: 12px;
+    text-align: center;
+    background-color: black;
+    color: white;
 }
