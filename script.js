@@ -71,6 +71,6 @@ function handleSmoothScroll(e) {
         top: document.getElementById(linkHref).offsetTop * 0.95,
         behavior: "smooth"
     })
-/*    console.log(document.getElementById(linkHref).offsetTop)*/
+
     window.history.pushState("", "", `${document.location.pathname}#${linkHref}`)
 }
