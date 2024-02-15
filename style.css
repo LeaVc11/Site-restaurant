@@ -381,7 +381,7 @@
 
 .about {
     padding: 50px 20px 25px;
-    background-color: white;
+    background: linear-gradient(to bottom, #e8d28d, #eae1c5);
 }
 
 .about-content {
@@ -525,13 +525,14 @@
 
 .cards-container {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .menu-card {
+
     flex-shrink: 0;
-    width: 260px;
+    width: 300px;
     color: #f1f1f1;
     margin: 20px;
     border-radius: 5px;
@@ -589,88 +590,134 @@
 }
 
 @media (max-width: 960px) {
-    .menu-card {
-        width: 20%;
-        max-width: 400px;
-        margin: 20px 20px 25px 80px;
-    }
-}
-
-@media (max-width: 720px) {
-    .menu-card {
-        width: 70%;
-        max-width: 550px;
-        margin: 20px 20px 25px 80px;
-    }
-}
-
-@media (max-width: 630px) {
-    .menu-card {
-        width: 70%;
-        max-width: 550px;
-        margin: 0 70px 25px 50px;
-    }
-}
-
-@media (max-width: 550px) {
-    .menu-card {
+    .menu {
         width: 100%;
-        max-width: 400px;
-        margin: 0 20px 25px 80px;
     }
 
-    .menu {
-        max-width: 350px;
-        padding: 50px 20px 200px 0;
-        margin: 0;
-    }
-
-}
-
-@media (max-width: 460px) {
     .menu-card {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 20px 25px 80px;
+        width: 40%;
+        max-width: 450px;
+        margin: 20px 20px 25px 20px;
     }
 
-    .menu {
-        max-width: 300px;
-        padding: 50px 20px 200px 0;
-        margin: 0;
+    @media (max-width: 720px) {
+        .menu-card {
+            width: 70%;
+            max-width: 550px;
+            margin: 20px 20px 25px 80px;
+        }
     }
 
+    @media (max-width: 630px) {
+        .menu-card {
+            width: 70%;
+            max-width: 550px;
+            margin: 0 70px 25px 50px;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .menu-card {
+            width: 100%;
+            max-width: 550px;
+            margin: 0 20px 25px 50px;
+        }
+
+        .menu {
+            max-width: 750px;
+            padding: 50px 20px 30px 0;
+            margin: 0;
+        }
+
+    }
+
+    @media (max-width: 460px) {
+        .menu-card {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 20px 25px 80px;
+        }
+
+        .menu {
+            max-width: 300px;
+            padding: 50px 20px 50px 0;
+            margin: 0;
+        }
+
+    }
+
+    @media (max-width: 410px) {
+        .menu-card {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 20px 25px 80px;
+        }
+
+        .menu {
+            max-width: 250px;
+            padding: 50px 20px 50px 0;
+            margin: 0;
+        }
+
+    }
+
+    @media (max-width: 350px) {
+
+        .menu {
+            max-width: 200px;
+        }
+
+    }
+
+    @media (max-width: 320px) {
+
+        .menu {
+            max-width: 300px;
+            padding: 50px 20px 20px 0;
+            margin: 0;
+        }
+    }
 }
 
-@media (max-width: 410px) {
-    .menu-card {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 20px 25px 80px;
-    }
-
-    .menu {
-        max-width: 250px;
-        padding: 50px 20px 200px 0;
-        margin: 0;
-    }
-
+/*<!--       Contact-->*/
+.contact {
+    padding: 20px 20px 20px;
+    background: linear-gradient(to bottom, #e8d28d, #eae1c5);
 }
 
-@media (max-width: 350px) {
-
-    .menu {
-        max-width: 200px;
-    }
-
+.contact-content {
+    display: flex;
+    justify-content: center;
 }
 
-@media (max-width: 320px) {
+.contact-block {
+    font-weight: bold;
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    color: orange;
+    width: 350px;
+}
 
-    .menu {
-        max-width: 250px;
-        padding: 50px 50px 200px 0;
-
-    }
-
+.contact-block :nth-child(1) {
+    margin-bottom: 16px;
+}
+.contact-block p:nth-child(1) {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+.contact-block p:nth-child(2) {
+    margin-bottom: 16px;
+}
+.schedule{
+    margin-left: 44px;
+}
+.schedule-tableau p {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+    padding-bottom: 6px;
+}
+.schedule-tableau p:not(:last-of-type) {
+    border-bottom: 1px solid black;
 }
